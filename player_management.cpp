@@ -1,6 +1,4 @@
 #include "config_and_globals.h"
-
-// ==================== GLOBAL ARRAYS ====================
 Player profiles[MAX_PLAYERS]; 
 int profileCount=0;       
 int currentPlayerIndex=-1; 
@@ -40,7 +38,6 @@ string loseRoasts[MAX_ROASTS] = {
 "GAME: \"Maybe try coloring books instead?\""
 };
 
-// ==================== PROFILE FUNCTIONS ====================
 string generateGamertag(string name){ 
     string tag=name,cleanTag="";
     for(int i=0;i<tag.length();i++) if(tag[i]!=' ') cleanTag+=tag[i];
